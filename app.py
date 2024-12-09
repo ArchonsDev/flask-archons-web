@@ -20,4 +20,4 @@ def contact():
 
 if __name__ == "__main__":
     # Run app
-    app.rune()
+    app.run()

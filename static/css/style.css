@@ -1,0 +1,229 @@
+:root {
+    --highlight-color: #FCA311;
+    --text-primary: #000000;
+    --background-color: #E5E5E5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-primary);
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+}
+
+.app-title b {
+    color: var(--highlight-color);
+    font-size: 1.75rem;
+}
+
+.app-title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.app-title:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+    background-color: var(--highlight-color);
+    transform: scale(1.2);
+}
+
+.nav-link.active {
+    color: var(--text-primary);
+    background-color: var(--highlight-color);
+}
+
+.nav-link:not(:first-of-type) {
+    margin-left: 0.75em;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 1em;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+#homepage section {
+    max-width: 50%;
+}
+
+.section-text .main {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.section-text .helper {
+    font-size: 1.5rem;
+}
+
+.section-text b {
+    color: var(--highlight-color);
+}
+
+.section-graphic img {
+    width: 100%;
+    height: auto;
+}
+
+#about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.section-title b {
+    color: var(--highlight-color);
+    font-weight: 700;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    width: 100%;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    width: 300px;
+}
+
+.card-img {
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.card-img img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    margin-top: 1em;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+form {
+    width: 300px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+input {
+    border: none;
+    background-color: var(--background-color);
+    padding: 0.8em 1em;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+input:focus {
+    border-bottom: 1px solid var(--highlight-color);
+    outline: none;
+}
+
+button {
+    background-color: var(--highlight-color);
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} | Archons.dev{% endblock %}
+
+{% block content %}
+<main id="homepage">
+  <!-- Landing Image -->
+  <section class="section-graphic">
+    <img class="rotate" src="{{ url_for('static', filename='images/uncharted.svg') }}" alt="">
+  </section>
+  <!-- Landing Text -->
+  <section class="section-text">
+    <p class="main"><b>SUPERCHARGE</b> your business.</p>
+    <p class="helper">Build <b>POWERFUL</b> apps with us.</p>
+  </section>
+</main>
+{% endblock %}

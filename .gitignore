@@ -5,3 +5,6 @@
 __pycache__/
 *.pyc
 .vercel
+
+# Environment Variables
+.env

@@ -1,0 +1,16 @@
+Subject: Thank You for Your Interest in Creating an App with Us
+
+Dear {{ name }},
+
+Thank you for reaching out to us! We're thrilled to hear that you're interested in creating an app with our team.
+
+We've received your request and will be reviewing the details soon. Your email address is: {{ email }}.
+
+Our team will contact you shortly to discuss the next steps and how we can help bring your app idea to life.
+
+In the meantime, feel free to reply to this email if you have any questions or additional details to share.
+
+Thank you again, and we look forward to working with you!
+
+Best regards,
+The Archons.dev Team
